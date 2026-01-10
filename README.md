@@ -30,7 +30,9 @@ services:
       - reverse_proxy
       - forward_proxy
     environment:
+      http_proxy: http://proxy:8080
       https_proxy: http://proxy:8080
+      no_proxy: localhost
 
   proxy:
     image: ghcr.io/knrdl/filterproxy:edge
