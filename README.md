@@ -2,8 +2,6 @@
 forward http/https proxy filtering requests by domain using a whitelist
 
 ```yaml
-version: "2.4"
-
 services:
   proxy:
     image: ghcr.io/knrdl/filterproxy:edge
