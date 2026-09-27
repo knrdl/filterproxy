@@ -37,6 +37,7 @@ services:
   proxy:
     image: ghcr.io/knrdl/filterproxy:edge
     restart: always
+    hostname: proxy
     mem_limit: 100m
     networks:
       - forward_proxy
