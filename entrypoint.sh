@@ -4,4 +4,4 @@ echo "$domains" > /tmp/whitelist
 
 cat /tmp/whitelist
 
-tinyproxy -d -c /tinyproxy.conf
+exec tinyproxy -d -c /tinyproxy.conf
