@@ -26,6 +26,8 @@ curl --proxy http://localhost:8080 example.com  # will NOT work (403 filtered)
 services:
   webapp:
     image: ...
+    depends_on:
+      - proxy
     networks:
       - reverse_proxy
       - forward_proxy
